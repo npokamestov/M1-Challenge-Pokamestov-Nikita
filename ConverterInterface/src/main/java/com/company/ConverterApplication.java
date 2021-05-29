@@ -12,7 +12,6 @@ public class ConverterApplication {
 
         System.out.println("Enter a month in numerical form to convert into words. (no zero's as first digit)");
         int userMonthNumber = Integer.parseInt(scan.nextLine());
-
         while (userMonthNumber < 1 || userMonthNumber > 12) {
             System.out.println("Please enter a month in numerical form between 1-12! (no zero's as first digit)");
             userMonthNumber = Integer.parseInt(scan.nextLine());
@@ -20,7 +19,6 @@ public class ConverterApplication {
 
         System.out.println("Enter a day in numerical form to convert into words.");
         int userDayNumber = Integer.parseInt(scan.nextLine());
-
         while (userDayNumber < 1 || userDayNumber > 7) {
             System.out.println("Please enter a day in numerical form 1-7! (1 being Sunday)");
             userDayNumber = Integer.parseInt(scan.nextLine());
@@ -29,7 +27,7 @@ public class ConverterApplication {
         ConverterSwitch sCon = new ConverterSwitch() {
 
             public String convertMonth(int monthNumber) {
-//
+
                 switch (monthNumber) {
                     case 1: return "January";
                     case 2: return "February";
