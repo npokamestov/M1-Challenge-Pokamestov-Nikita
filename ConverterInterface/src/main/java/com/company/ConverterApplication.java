@@ -59,7 +59,6 @@ public class ConverterApplication {
                 }
             }
 
-
             public String convertDay(int dayNumber) {
 
                 switch (dayNumber) {
