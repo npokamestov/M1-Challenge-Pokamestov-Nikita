@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a6b0fca-70f5-4c2a-97d5-784def50db5a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../CalculatorObject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CalculatorObject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Switch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Switch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/SwitchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/SwitchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceCreamClassDesign/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../IceCreamClassDesign/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +57,7 @@
       <recent name="com.company" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.IfTest">
+  <component name="RunManager" selected="Application.ConverterApplication">
     <configuration name="ConverterApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.ConverterApplication" />
       <module name="ConverterInterface" />
@@ -131,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ConverterApplication" />
         <item itemvalue="JUnit.IfTest" />
         <item itemvalue="JUnit.SwitchTest" />
         <item itemvalue="JUnit.IfTest.shouldReturnDayUsingIf" />
         <item itemvalue="JUnit.IfTest.shouldReturnMonthUsingIf" />
-        <item itemvalue="Application.ConverterApplication" />
       </list>
     </recent_temporary>
   </component>

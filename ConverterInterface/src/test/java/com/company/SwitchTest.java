@@ -13,6 +13,10 @@ public class SwitchTest {
         String whatIExpect = "January";
         String whatIGot = sCon.convertMonth(1);
         assertEquals(whatIExpect, whatIGot);
+
+        String whatIExpect2 = "February";
+        String whatIGot2 = sCon.convertMonth(2);
+        assertEquals(whatIExpect2, whatIGot2);
     }
 
     @Test
@@ -22,6 +26,10 @@ public class SwitchTest {
         String whatIExpect = "Sunday";
         String whatIGot = sCon.convertDay(1);
         assertEquals(whatIExpect, whatIGot);
+
+        String whatIExpect2 = "Monday";
+        String whatIGot2 = sCon.convertDay(2);
+        assertEquals(whatIExpect2, whatIGot2);
     }
 
 }
