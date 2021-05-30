@@ -7,6 +7,11 @@
     <list default="true" id="e86da6c0-bc49-4e29-addd-3a627e71c50f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ConverterInterface/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ConverterInterface/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConverterInterface/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ConverterInterface/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConverterInterface/src/main/java/com/company/ConverterApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ConverterInterface/src/main/java/com/company/ConverterApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceCreamClassDesign/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../IceCreamClassDesign/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceCreamClassDesign/src/main/java/com/company/IceCreamFAC.java" beforeDir="false" afterPath="$PROJECT_DIR$/../IceCreamClassDesign/src/main/java/com/company/IceCreamFAC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IceCreamClassDesign/src/main/java/com/company/IceCreamPOS.java" beforeDir="false" afterPath="$PROJECT_DIR$/../IceCreamClassDesign/src/main/java/com/company/IceCreamPOS.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
