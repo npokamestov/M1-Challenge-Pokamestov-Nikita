@@ -10,19 +10,33 @@ public class ConverterApplication {
 
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Enter a month in numerical form to convert into words. (no zero's as first digit)");
-        int userMonthNumber = Integer.parseInt(scan.nextLine());
+        System.out.println("Enter a Month in numerical form to convert into words.");
+        int userMonthNumber;
+        while (!scan.hasNextInt()) {
+            System.out.println("Please enter a Month in numerical form between 1-12!");
+            scan.next();
+        } userMonthNumber = scan.nextInt();
         while (userMonthNumber < 1 || userMonthNumber > 12) {
-            System.out.println("Please enter a month in numerical form between 1-12! (no zero's as first digit)");
-            userMonthNumber = Integer.parseInt(scan.nextLine());
-        } int monthNumber = userMonthNumber;
+            System.out.println("Please enter a Month in numerical form between 1-12!");
+            while (!scan.hasNextInt()) {
+                System.out.println("Please enter a Month in numerical form between 1-12!");
+                scan.next();
+            } userMonthNumber = scan.nextInt();
+        }
 
-        System.out.println("Enter a day in numerical form to convert into words.");
-        int userDayNumber = Integer.parseInt(scan.nextLine());
+        System.out.println("Enter a Day in numerical form to convert into words.");
+        int userDayNumber;
+        while (!scan.hasNextInt()) {
+            System.out.println("Please enter a Day in numerical form 1-7! (1 being Sunday)");
+            scan.next();
+        } userDayNumber = scan.nextInt();
         while (userDayNumber < 1 || userDayNumber > 7) {
-            System.out.println("Please enter a day in numerical form 1-7! (1 being Sunday)");
-            userDayNumber = Integer.parseInt(scan.nextLine());
-        } int dayNumber = userDayNumber;
+            System.out.println("Please enter a Day in numerical form 1-7! (1 being Sunday)");
+            while (!scan.hasNextInt()) {
+                System.out.println("Please enter a Day in numerical form 1-7! (1 being Sunday)");
+                scan.next();
+            } userDayNumber = scan.nextInt();
+        }
 
         ConverterSwitch sCon = new ConverterSwitch() {
 
@@ -63,33 +77,33 @@ public class ConverterApplication {
 
         ConverterIf iCon = new ConverterIf() {
 
-            public String convertMonth(int month) {
+            public String convertMonth(int userMonthNumber) {
 
-                String monthName = "";
+                String monthName;
 
-                if (monthNumber == 1) {
+                if (userMonthNumber == 1) {
                     monthName = "January";
-                } else if (monthNumber == 2) {
+                } else if (userMonthNumber == 2) {
                     monthName = "February";
-                } else if (monthNumber == 3) {
+                } else if (userMonthNumber == 3) {
                     monthName ="March";
-                } else if (monthNumber == 4) {
+                } else if (userMonthNumber == 4) {
                     monthName ="April";
-                } else if (monthNumber == 5) {
+                } else if (userMonthNumber == 5) {
                     monthName ="May";
-                } else if (monthNumber == 6) {
+                } else if (userMonthNumber == 6) {
                     monthName ="June";
-                } else if (monthNumber == 7) {
+                } else if (userMonthNumber == 7) {
                     monthName ="July";
-                } else if (monthNumber == 8) {
+                } else if (userMonthNumber == 8) {
                     monthName ="August";
-                } else if (monthNumber == 9) {
+                } else if (userMonthNumber == 9) {
                     monthName ="September";
-                } else if (monthNumber == 10) {
+                } else if (userMonthNumber == 10) {
                     monthName ="October";
-                } else if (monthNumber == 11) {
+                } else if (userMonthNumber == 11) {
                     monthName ="November";
-                } else if (monthNumber == 12) {
+                } else {
                     monthName ="December";
                 }
                 return monthName;
@@ -97,7 +111,7 @@ public class ConverterApplication {
 
             public String convertDay(int dayNumber) {
 
-                String dayName = "";
+                String dayName;
 
                 if (dayNumber == 1) {
                     dayName = "Sunday";
@@ -108,20 +122,19 @@ public class ConverterApplication {
                 } else if (dayNumber == 4) {
                     dayName = "Wednesday";
                 } else if (dayNumber == 5) {
-                    dayName = "Thurday";
+                    dayName = "Thursday";
                 } else if (dayNumber == 6) {
                     dayName = "Friday";
-                } else if (dayNumber == 7) {
+                } else {
                     dayName = "Saturday";
                 }
-
                 return dayName;
             }
         };
 
         System.out.println("Using |ConverterSwitch|, the Month is: " + sCon.convertMonth(userMonthNumber));
         System.out.println("Using |ConverterSwitch|, the Day is: " + sCon.convertDay(userDayNumber));
-
+        System.out.println("================================================");
         System.out.println("Using |ConverterIf|, the Month is: " + iCon.convertMonth(userMonthNumber));
         System.out.println("Using |ConverterIf|, the Day is: " + iCon.convertDay(userDayNumber));
     }
