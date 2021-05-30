@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e86da6c0-bc49-4e29-addd-3a627e71c50f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ConverterInterface/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ConverterInterface/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ConverterInterface/src/main/java/com/company/Switch.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ConverterInterface/src/main/java/com/company/Switch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ConverterInterface/src/test/java/com/company/SwitchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ConverterInterface/src/test/java/com/company/SwitchTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../IceCreamClassDesign/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../IceCreamClassDesign/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -36,10 +37,19 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
   </component>
-  <component name="RunManager">
-    <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Calculator" />
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.company" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.CalculatorTest">
+    <configuration name="CalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CalculatorObject" />
       <extension name="coverage">
         <pattern>
@@ -47,13 +57,84 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.CalculatorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculatorTest.shouldAddTwoDoublesAndReturnResult" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CalculatorObject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.CalculatorTest" />
+      <option name="METHOD_NAME" value="shouldAddTwoDoublesAndReturnResult" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculatorTest.shouldDivideTwoDoublesAndReturnResult" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CalculatorObject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.CalculatorTest" />
+      <option name="METHOD_NAME" value="shouldDivideTwoDoublesAndReturnResult" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculatorTest.shouldMultiplyTwoDoublesAndReturnResult" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CalculatorObject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.CalculatorTest" />
+      <option name="METHOD_NAME" value="shouldMultiplyTwoDoublesAndReturnResult" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculatorTest.shouldSubtractTwoDoublesAndReturnResult" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CalculatorObject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.CalculatorTest" />
+      <option name="METHOD_NAME" value="shouldSubtractTwoDoublesAndReturnResult" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Calculator" />
+        <item itemvalue="JUnit.CalculatorTest" />
+        <item itemvalue="JUnit.CalculatorTest.shouldSubtractTwoDoublesAndReturnResult" />
+        <item itemvalue="JUnit.CalculatorTest.shouldMultiplyTwoDoublesAndReturnResult" />
+        <item itemvalue="JUnit.CalculatorTest.shouldAddTwoDoublesAndReturnResult" />
+        <item itemvalue="JUnit.CalculatorTest.shouldDivideTwoDoublesAndReturnResult" />
       </list>
     </recent_temporary>
   </component>
@@ -67,5 +148,16 @@
       <updated>1622340388799</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
