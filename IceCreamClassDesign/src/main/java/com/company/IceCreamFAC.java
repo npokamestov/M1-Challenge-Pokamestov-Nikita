@@ -1,94 +1,154 @@
 package com.company;
 
-import java.util.List;
 import java.util.Objects;
 
 public class IceCreamFAC {
 
-    private String milk;
-    private String sugar;
-    private List<String> fruits;
-    private List<String> syrups;
-    private List<String> nuts;
-    private String chocolate;
-    private String packaging;
+    public boolean isContainsChocolate() {
+        return containsChocolate;
+    }
 
-    public void addMilk() {};
+    private String fruits;
+    private String syrups;
+    private String candies;
+    private String nuts;
+    private boolean containsNuts;
+    private boolean containsChocolate;
+    private boolean isMixerOn;
+    private boolean isFreezerFull;
+    private boolean isIceCreamMixed;
+    private boolean isIceCreamMixing;
+    private boolean areIngredientsAdded;
 
-    public void addSugar() {};
+    public void addIngredients() {
+        setFruits(fruits);
+        setSyrups(syrups);
+        setCandies(candies);
+        setNuts(nuts);
+    }
 
-    public void addFruit() {};
+    public boolean addChocolate() {
+        return containsChocolate = true;
+    }
 
-    public void addNut() {};
+    public String turnOnMixer () {
+        isMixerOn = true;
+        isIceCreamMixing = true;
+        isIceCreamMixed = true;
 
-    public void addChocolate() {};
+        String hasChocolate;
+        if (containsChocolate) {
+            hasChocolate = "chocolate";
+        } else {hasChocolate = "";}
 
-    public void packageUp() {};
+        return "These ingredients have been added: " + getFruits() + getSyrups() + getCandies() + getNuts() + hasChocolate + " ,and are mixing!";
+    }
 
-    public IceCreamFAC(String milk, String sugar, List<String> fruits, List<String> syrups, List<String> nuts, String chocolate, String packaging) {
-        this.milk = milk;
-        this.sugar = sugar;
+    public String addToFreezer() {
+        if (!isIceCreamMixed) {
+            return "Cannot add to freezer, you must finish mixing!";
+        } else if (isFreezerFull) {
+            return "Cannot add to freezer, the freezer is full.";
+        } else {return "Added to freezer!";}
+    }
+
+    public IceCreamFAC(String fruits, String syrups, String candies, String nuts, boolean containsNuts, boolean containsChocolate, boolean isMixerOn, boolean isFreezerFull, boolean isIceCreamMixed, boolean isIceCreamMixing, boolean areIngredientsAdded) {
         this.fruits = fruits;
         this.syrups = syrups;
+        this.candies = candies;
         this.nuts = nuts;
-        this.chocolate = chocolate;
-        this.packaging = packaging;
+        this.containsNuts = containsNuts;
+        this.containsChocolate = containsChocolate;
+        this.isMixerOn = isMixerOn;
+        this.isFreezerFull = isFreezerFull;
+        this.isIceCreamMixed = isIceCreamMixed;
+        this.isIceCreamMixing = isIceCreamMixing;
+        this.areIngredientsAdded = areIngredientsAdded;
     }
 
-    public String getMilk() {
-        return milk;
-    }
-
-    public void setMilk(String milk) {
-        this.milk = milk;
-    }
-
-    public String getSugar() {
-        return sugar;
-    }
-
-    public void setSugar(String sugar) {
-        this.sugar = sugar;
-    }
-
-    public List<String> getFruits() {
+    public String getFruits() {
         return fruits;
     }
 
-    public void setFruits(List<String> fruits) {
+    public void setFruits(String fruits) {
         this.fruits = fruits;
     }
 
-    public List<String> getSyrups() {
+    public String getSyrups() {
         return syrups;
     }
 
-    public void setSyrups(List<String> syrups) {
+    public void setSyrups(String syrups) {
         this.syrups = syrups;
     }
 
-    public List<String> getNuts() {
+    public String getCandies() {
+        return candies;
+    }
+
+    public void setCandies(String candies) {
+        this.candies = candies;
+    }
+
+    public String getNuts() {
         return nuts;
     }
 
-    public void setNuts(List<String> nuts) {
+    public void setNuts(String nuts) {
         this.nuts = nuts;
+        containsNuts = true;
     }
 
-    public String getChocolate() {
-        return chocolate;
+    public boolean isContainsNuts() {
+        return containsNuts;
     }
 
-    public void setChocolate(String chocolate) {
-        this.chocolate = chocolate;
+    public void setContainsNuts(boolean containsNuts) {
+        this.containsNuts = containsNuts;
     }
 
-    public String getPackaging() {
-        return packaging;
+    public void setContainsChocolate(boolean containsChocolate) {
+        this.containsChocolate = containsChocolate;
     }
 
-    public void setPackaging(String packaging) {
-        this.packaging = packaging;
+    public boolean isMixerOn() {
+        return isMixerOn;
+    }
+
+    public void setMixerOn(boolean mixerOn) {
+        isMixerOn = mixerOn;
+    }
+
+    public boolean isFreezerFull() {
+        return isFreezerFull;
+    }
+
+    public void setFreezerFull(boolean freezerFull) {
+        isFreezerFull = freezerFull;
+    }
+
+    public boolean isIceCreamMixed() {
+        return isIceCreamMixed;
+    }
+
+    public void setIceCreamMixed(boolean iceCreamMixed) {
+        isIceCreamMixed = iceCreamMixed;
+    }
+
+    public boolean isIceCreamMixing() {
+        return isIceCreamMixing;
+    }
+
+    public void setIceCreamMixing(boolean iceCreamMixing) {
+        isIceCreamMixing = iceCreamMixing;
+    }
+
+    public boolean isAreIngredientsAdded() {
+        return areIngredientsAdded;
+    }
+
+    public void setAreIngredientsAdded(boolean areIngredientsAdded) {
+        this.areIngredientsAdded = areIngredientsAdded;
     }
 
     @Override
@@ -96,24 +156,28 @@ public class IceCreamFAC {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         IceCreamFAC that = (IceCreamFAC) o;
-        return Objects.equals(getMilk(), that.getMilk()) && Objects.equals(getSugar(), that.getSugar()) && Objects.equals(getFruits(), that.getFruits()) && Objects.equals(getSyrups(), that.getSyrups()) && Objects.equals(getNuts(), that.getNuts()) && Objects.equals(getChocolate(), that.getChocolate()) && Objects.equals(getPackaging(), that.getPackaging());
+        return isContainsNuts() == that.isContainsNuts() && isContainsChocolate() == that.isContainsChocolate() && isMixerOn() == that.isMixerOn() && isFreezerFull() == that.isFreezerFull() && isIceCreamMixed() == that.isIceCreamMixed() && isIceCreamMixing() == that.isIceCreamMixing() && isAreIngredientsAdded() == that.isAreIngredientsAdded() && Objects.equals(getFruits(), that.getFruits()) && Objects.equals(getSyrups(), that.getSyrups()) && Objects.equals(getCandies(), that.getCandies()) && Objects.equals(getNuts(), that.getNuts());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getMilk(), getSugar(), getFruits(), getSyrups(), getNuts(), getChocolate(), getPackaging());
+        return Objects.hash(getFruits(), getSyrups(), getCandies(), getNuts(), isContainsNuts(), isContainsChocolate(), isMixerOn(), isFreezerFull(), isIceCreamMixed(), isIceCreamMixing(), isAreIngredientsAdded());
     }
 
     @Override
     public String toString() {
         return "IceCreamFAC{" +
-                "milk='" + milk + '\'' +
-                ", sugar='" + sugar + '\'' +
-                ", fruits=" + fruits +
-                ", syrups=" + syrups +
-                ", nuts=" + nuts +
-                ", chocolate='" + chocolate + '\'' +
-                ", packaging='" + packaging + '\'' +
+                "fruits='" + fruits + '\'' +
+                ", syrups='" + syrups + '\'' +
+                ", candies='" + candies + '\'' +
+                ", nuts='" + nuts + '\'' +
+                ", containsNuts=" + containsNuts +
+                ", containsChocolate=" + containsChocolate +
+                ", isMixerOn=" + isMixerOn +
+                ", isFreezerFull=" + isFreezerFull +
+                ", isIceCreamMixed=" + isIceCreamMixed +
+                ", isIceCreamMixing=" + isIceCreamMixing +
+                ", areIngredientsAdded=" + areIngredientsAdded +
                 '}';
     }
 }

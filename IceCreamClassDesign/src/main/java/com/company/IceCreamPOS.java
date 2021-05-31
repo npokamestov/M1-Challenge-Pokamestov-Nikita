@@ -1,46 +1,58 @@
 package com.company;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 import java.util.Objects;
 
 public class IceCreamPOS {
 
-
-
-
     private double price;
+    private double totalPrice;
     private int scoops;
-    private List<String> flavors;
-    private List<String> containers;
-    private List<String> toppings;
+    private String flavors;
+    private boolean cone;
+    private int toppings;
 
-    public List<String> pickContainer(List<String> containers) {
-        return containers;
-    };
+    public double scoopPrice() {
+        price = 3.50;
+        scoops = this.getScoops();
+        return price * scoops;
+    }
 
-    public List<String> pickFlavor(List<String> flavors) {
-        return flavors;
-    };
+    public double toppingPrice() {
+        price = 1.00;
+        toppings = this.getToppings();
+        return price * toppings;
+    }
 
-    public List<String> pickTopping(List<String> toppings) {
-        return toppings;
-    };
+    public double addCone() {
+        cone = true;
+        return 2.00;
+    }
 
-    public Map<String, Integer> buildDessert(List<String> containers, List<String> flavors, List<String> toppings) {
-        return null;
-    };
+    public double totalPrice() {
+        return totalPrice = scoopPrice() + toppingPrice() + addCone();
+    }
 
-    public double totalCost() {
-        return price;
-    };
+    public String receipt() {
 
-    public IceCreamPOS(double price, int scoops, List<String> flavors, List<String> containers, List<String> toppings) {
+        String pluralScoop;
+        if( getScoops() > 1) {
+                    pluralScoop = "scoops";
+                } else {pluralScoop = "scoop";}
+
+        String pluralTopping;
+        if( getToppings() > 1) {
+            pluralTopping = "toppings";
+        } else {pluralTopping = "topping";}
+
+        return "The total for your purchase of " + getScoops() + pluralScoop + " of " + getFlavors() + " ice cream with  " + getToppings() +  pluralTopping + " costs " + totalPrice;
+    }
+
+    public IceCreamPOS(double price, double totalPrice, int scoops, String flavors, boolean cone, int toppings) {
         this.price = price;
+        this.totalPrice = totalPrice;
         this.scoops = scoops;
         this.flavors = flavors;
-        this.containers = containers;
+        this.cone = cone;
         this.toppings = toppings;
     }
 
@@ -52,6 +64,14 @@ public class IceCreamPOS {
         this.price = price;
     }
 
+    public double getTotalPrice() {
+        return totalPrice;
+    }
+
+    public void setTotalPrice(double totalPrice) {
+        this.totalPrice = totalPrice;
+    }
+
     public int getScoops() {
         return scoops;
     }
@@ -60,27 +80,27 @@ public class IceCreamPOS {
         this.scoops = scoops;
     }
 
-    public List<String> getFlavors() {
+    public String getFlavors() {
         return flavors;
     }
 
-    public void setFlavors(List<String> flavors) {
+    public void setFlavors(String flavors) {
         this.flavors = flavors;
     }
 
-    public List<String> getContainers() {
-        return containers;
+    public boolean isCone() {
+        return cone;
     }
 
-    public void setContainers(List<String> containers) {
-        this.containers = containers;
+    public void setCone(boolean cone) {
+        this.cone = cone;
     }
 
-    public List<String> getToppings() {
+    public int getToppings() {
         return toppings;
     }
 
-    public void setToppings(List<String> toppings) {
+    public void setToppings(int toppings) {
         this.toppings = toppings;
     }
 
@@ -89,21 +109,22 @@ public class IceCreamPOS {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         IceCreamPOS that = (IceCreamPOS) o;
-        return Double.compare(that.getPrice(), getPrice()) == 0 && getScoops() == that.getScoops() && Objects.equals(getFlavors(), that.getFlavors()) && Objects.equals(getContainers(), that.getContainers()) && Objects.equals(getToppings(), that.getToppings());
+        return Double.compare(that.getPrice(), getPrice()) == 0 && Double.compare(that.getTotalPrice(), getTotalPrice()) == 0 && getScoops() == that.getScoops() && isCone() == that.isCone() && getToppings() == that.getToppings() && Objects.equals(getFlavors(), that.getFlavors());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getPrice(), getScoops(), getFlavors(), getContainers(), getToppings());
+        return Objects.hash(getPrice(), getTotalPrice(), getScoops(), getFlavors(), isCone(), getToppings());
     }
 
     @Override
     public String toString() {
         return "IceCreamPOS{" +
                 "price=" + price +
-                ", scoopNum=" + scoops +
-                ", flavors=" + flavors +
-                ", containers=" + containers +
+                ", totalPrice=" + totalPrice +
+                ", scoops=" + scoops +
+                ", flavors='" + flavors + '\'' +
+                ", cone=" + cone +
                 ", toppings=" + toppings +
                 '}';
     }
