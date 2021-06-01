@@ -11,29 +11,17 @@ public abstract class Character {
     protected int speed;
     protected int attackPower;
 
-    public void run(){
-        System.out.println("Character is running!");
-    }
+    public abstract void run();
 
-    public void attack() {
-        System.out.println("Character attacked another character!");
-    }
+    public abstract void attack() ;
 
-    public void heal() {
-        System.out.println("Character is healing.");
-    }
+    public abstract void heal() ;
 
-    public void decreaseHealth() {
-        System.out.println("Character's health has been decreased!");
-    }
+    public abstract void decreaseHealth() ;
 
-    public void increaseStamina() {
-        System.out.println("Character's stamina has been increased!");
-    }
+    public abstract void increaseStamina() ;
 
-    public void decreaseStamina() {
-        System.out.println("Character's health has been decreased!");
-    }
+    public abstract void decreaseStamina() ;
 
     public Character(String name, int strength, int health, int stamina, int speed, int attackPower) {
         this.name = name;

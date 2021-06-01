@@ -10,28 +10,8 @@ public class Warrior extends Character {
         System.out.println(this.name + " has lost shield strength!");
     }
 
-    @Override
-    public void setStrength(int strength) {
-        super.setStrength(75);
-    }
-
-    @Override
-    public void setStamina(int stamina) {
-        super.setStamina(100);
-    }
-
-    @Override
-    public void setSpeed(int speed) {
-        super.setSpeed(50);
-    }
-
-    @Override
-    public void setAttackPower(int attackPower) {
-        super.setAttackPower(10);
-    }
-
     public Warrior(String name, int strength, int health, int stamina, int speed, int attackPower, int shieldStrength) {
-        super(name, strength, health, stamina, speed, attackPower);
+        super(name, 75, health, 100, 50, 10);
         this.shieldStrength = shieldStrength;
     }
 
@@ -41,6 +21,30 @@ public class Warrior extends Character {
 
     public void setShieldStrength(int shieldStrength) {
         this.shieldStrength = shieldStrength;
+    }
+
+    public void run() {
+
+    }
+
+    public void attack() {
+
+    }
+
+    public void heal() {
+
+    }
+
+    public void decreaseHealth() {
+
+    }
+
+    public void increaseStamina() {
+
+    }
+
+    public void decreaseStamina() {
+
     }
 
     @Override

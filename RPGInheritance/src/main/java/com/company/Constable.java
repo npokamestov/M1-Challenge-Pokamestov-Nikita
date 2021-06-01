@@ -10,28 +10,8 @@ public class Constable extends Character {
         System.out.println(this.name + " has arrested a character!");
     }
 
-    @Override
-    public void setStrength(int strength) {
-        super.setStrength(60);
-    }
-
-    @Override
-    public void setStamina(int stamina) {
-        super.setStamina(60);
-    }
-
-    @Override
-    public void setSpeed(int speed) {
-        super.setSpeed(20);
-    }
-
-    @Override
-    public void setAttackPower(int attackPower) {
-        super.setAttackPower(5);
-    }
-
     public Constable(String name, int strength, int health, int stamina, int speed, int attackPower, String jurisdiction) {
-        super(name, strength, health, stamina, speed, attackPower);
+        super(name, 60, health, 60, 20, 5);
         this.jurisdiction = jurisdiction;
     }
 
@@ -41,6 +21,30 @@ public class Constable extends Character {
 
     public void setJurisdiction(String jurisdiction) {
         this.jurisdiction = jurisdiction;
+    }
+
+    public void run() {
+
+    }
+
+    public void attack() {
+
+    }
+
+    public void heal() {
+
+    }
+
+    public void decreaseHealth() {
+
+    }
+
+    public void increaseStamina() {
+
+    }
+
+    public void decreaseStamina() {
+
     }
 
     @Override
