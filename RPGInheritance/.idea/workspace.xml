@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1c8cd86-bc0b-4be2-a35b-02c9418248f5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../IceCreamClassDesign/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../IceCreamClassDesign/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Character.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Constable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Constable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Farmer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Farmer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Warrior.java" afterDir="false" />
-    </list>
+    <list default="true" id="e1c8cd86-bc0b-4be2-a35b-02c9418248f5" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
