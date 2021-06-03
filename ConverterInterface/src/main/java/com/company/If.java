@@ -27,8 +27,10 @@ public class If implements ConverterIf {
             return "October";
         } else if (userMonthNumber == 11) {
             return "November";
-        } else {
+        } else if (userMonthNumber == 12){
             return "December";
+        } else {
+            return "Did not pick a valid month number";
         }
     }
 
@@ -46,8 +48,10 @@ public class If implements ConverterIf {
             return "Thursday";
         } else if (dayNumber == 6) {
             return "Friday";
-        } else {
+        } else if (dayNumber == 7){
             return "Saturday";
+        } else {
+            return "Did not pick a valid day number";
         }
     }
 }

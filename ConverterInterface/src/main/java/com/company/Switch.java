@@ -19,7 +19,7 @@ public class Switch implements ConverterSwitch {
             case 10: return "October";
             case 11: return "November";
             case 12: return "December";
-            default: return "";
+            default: return "Did not pick a valid month number";
         }
     }
 
@@ -33,7 +33,7 @@ public class Switch implements ConverterSwitch {
             case 5: return "Thursday";
             case 6: return "Friday";
             case 7: return "Saturday";
-            default: return "";
+            default: return "Did not pick a valid day number";
         }
     }
 }
