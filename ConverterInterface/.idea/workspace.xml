@@ -6,9 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="2a6b0fca-70f5-4c2a-97d5-784def50db5a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../CalculatorObject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CalculatorObject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CalculatorObject/src/main/java/com/company/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CalculatorObject/src/main/java/com/company/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CalculatorObject/src/main/java/com/company/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CalculatorObject/src/main/java/com/company/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CalculatorObject/src/test/java/com/company/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CalculatorObject/src/test/java/com/company/CalculatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/If.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/If.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Switch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Switch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/IfTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/IfTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/SwitchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/SwitchTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,63 +60,18 @@
       <recent name="com.company" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ConverterApplication">
-    <configuration name="ConverterApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.ConverterApplication" />
-      <module name="ConverterInterface" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.If" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.IfTest">
     <configuration name="IfTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ConverterInterface" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.If" />
+          <option name="PATTERN" value="com.company.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.company" />
       <option name="MAIN_CLASS_NAME" value="com.company.IfTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IfTest.shouldReturnDayUsingIf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ConverterInterface" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.If" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.company" />
-      <option name="MAIN_CLASS_NAME" value="com.company.IfTest" />
-      <option name="METHOD_NAME" value="shouldReturnDayUsingIf" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IfTest.shouldReturnMonthUsingIf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ConverterInterface" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.If" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.company" />
-      <option name="MAIN_CLASS_NAME" value="com.company.IfTest" />
-      <option name="METHOD_NAME" value="shouldReturnMonthUsingIf" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -133,13 +91,61 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SwitchTest.shouldReturnDidNotPickValidDayNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ConverterInterface" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.SwitchTest" />
+      <option name="METHOD_NAME" value="shouldReturnDidNotPickValidDayNumber" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SwitchTest.shouldReturnDidNotPickValidMonthNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ConverterInterface" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.SwitchTest" />
+      <option name="METHOD_NAME" value="shouldReturnDidNotPickValidMonthNumber" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SwitchTest.shouldReturnMonthUsingIf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ConverterInterface" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.SwitchTest" />
+      <option name="METHOD_NAME" value="shouldReturnMonthUsingIf" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ConverterApplication" />
         <item itemvalue="JUnit.IfTest" />
         <item itemvalue="JUnit.SwitchTest" />
-        <item itemvalue="JUnit.IfTest.shouldReturnDayUsingIf" />
-        <item itemvalue="JUnit.IfTest.shouldReturnMonthUsingIf" />
+        <item itemvalue="JUnit.SwitchTest.shouldReturnMonthUsingIf" />
+        <item itemvalue="JUnit.SwitchTest.shouldReturnDidNotPickValidDayNumber" />
+        <item itemvalue="JUnit.SwitchTest.shouldReturnDidNotPickValidMonthNumber" />
       </list>
     </recent_temporary>
   </component>

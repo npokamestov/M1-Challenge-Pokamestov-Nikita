@@ -44,29 +44,29 @@ public class CalculatorTest {
 
     @Test
     public void shouldDivideTwoDoublesAndReturnResult() {
-        double whatIShouldGet = 1.7142857142;
+        double whatIShouldGet = 1.71;
         double whatIGot = calc.divideDouble(12,7);
-        assertEquals(whatIShouldGet,whatIGot, 10);
+        assertEquals(whatIShouldGet,whatIGot, 0.01);
     }
 
     @Test
     public void shouldAddTwoDoublesAndReturnResult() {
-        double whatIShouldGet = 5.6999999999;
+        double whatIShouldGet = 5.7;
         double whatIGot = calc.addDouble(3.4,2.3);
-        assertEquals(whatIShouldGet,whatIGot, 10);
+        assertEquals(whatIShouldGet,whatIGot, 0.01);
     }
 
     @Test
     public void shouldMultiplyTwoDoublesAndReturnResult() {
-        double whatIShouldGet = 29.4800000000;
+        double whatIShouldGet = 29.48;
         double whatIGot = calc.multiplyDouble(6.7,4.4);
-        assertEquals(whatIShouldGet,whatIGot, 10);
+        assertEquals(whatIShouldGet,whatIGot, 0.01);
     }
 
     @Test
     public void shouldSubtractTwoDoublesAndReturnResult() {
-        double whatIShouldGet = 5.5;
+        double whatIShouldGet = 5.0;
         double whatIGot = calc.subtractDouble(5.5,0.5);
-        assertEquals(whatIShouldGet,whatIGot,10);
+        assertEquals(whatIShouldGet,whatIGot,0.01);
     }
 }

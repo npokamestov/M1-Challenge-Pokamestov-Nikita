@@ -19,8 +19,7 @@ public class Calculator {
         return a / b;
     }
 
-
-    //    Methods to calculate using two double parameters
+//    Methods to calculate using two double parameters
     public double addDouble(double a, double b) {
         return a + b;
     }

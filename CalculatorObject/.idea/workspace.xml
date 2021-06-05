@@ -6,7 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="e86da6c0-bc49-4e29-addd-3a627e71c50f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/CalculatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ConverterInterface/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ConverterInterface/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConverterInterface/src/test/java/com/company/IfTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ConverterInterface/src/test/java/com/company/IfTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConverterInterface/src/test/java/com/company/SwitchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ConverterInterface/src/test/java/com/company/SwitchTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,10 +134,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CalculatorTest" />
-        <item itemvalue="JUnit.CalculatorTest.shouldSubtractTwoDoublesAndReturnResult" />
-        <item itemvalue="JUnit.CalculatorTest.shouldMultiplyTwoDoublesAndReturnResult" />
-        <item itemvalue="JUnit.CalculatorTest.shouldAddTwoDoublesAndReturnResult" />
         <item itemvalue="JUnit.CalculatorTest.shouldDivideTwoDoublesAndReturnResult" />
+        <item itemvalue="JUnit.CalculatorTest.shouldAddTwoDoublesAndReturnResult" />
+        <item itemvalue="JUnit.CalculatorTest.shouldMultiplyTwoDoublesAndReturnResult" />
+        <item itemvalue="JUnit.CalculatorTest.shouldSubtractTwoDoublesAndReturnResult" />
       </list>
     </recent_temporary>
   </component>
