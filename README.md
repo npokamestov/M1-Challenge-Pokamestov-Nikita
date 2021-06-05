@@ -1,1 +1,0 @@
-# M1-Challenge-Pokamestov-Nikita
