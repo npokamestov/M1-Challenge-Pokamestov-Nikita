@@ -2,16 +2,16 @@ package com.randomFunService.randomFunService.model;
 
 import java.util.Objects;
 
-public class Word {
+public class Definition {
 
     protected int id;
     protected String word;
     protected String definition;
 
-    public Word() {
+    public Definition() {
     }
 
-    public Word(int id, String word, String definition) {
+    public Definition(int id, String word, String definition) {
         this.id = id;
         this.word = word;
         this.definition = definition;
@@ -45,8 +45,8 @@ public class Word {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Word word1 = (Word) o;
-        return getId() == word1.getId() && Objects.equals(getWord(), word1.getWord()) && Objects.equals(getDefinition(), word1.getDefinition());
+        Definition definition = (Definition) o;
+        return getId() == definition.getId() && Objects.equals(getWord(), definition.getWord()) && Objects.equals(getDefinition(), definition.getDefinition());
     }
 
     @Override
@@ -56,7 +56,7 @@ public class Word {
 
     @Override
     public String toString() {
-        return "Word{" +
+        return "Definition{" +
                 "id=" + id +
                 ", word='" + word + '\'' +
                 ", definition='" + definition + '\'' +

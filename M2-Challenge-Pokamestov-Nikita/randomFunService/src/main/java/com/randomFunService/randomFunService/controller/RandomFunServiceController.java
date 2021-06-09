@@ -1,8 +1,8 @@
 package com.randomFunService.randomFunService.controller;
 
 import com.randomFunService.randomFunService.model.Answer;
+import com.randomFunService.randomFunService.model.Definition;
 import com.randomFunService.randomFunService.model.Quote;
-import com.randomFunService.randomFunService.model.Word;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
@@ -27,17 +27,17 @@ public class RandomFunServiceController {
             new Quote(10,"William Penn","The jealous are troublesome to others, but torment to themselves.")
     ));
 
-    private static List<Word> wordList = new ArrayList<>(Arrays.asList(
-            new Word(1, "grenadine", "thin syrup made from pomegranate juice; used in mixed drinks"),
-            new Word(2, "hefty", "of considerable weight and size"),
-            new Word(3, "gladiolus", "any of numerous plants of the genus Gladiolus native chiefly to tropical and South Africa having sword-shaped leaves and one-sided spikes of brightly colored funnel-shaped flowers; widely cultivated"),
-            new Word(4, "pelter", "a thrower of missiles"),
-            new Word(5, "concretize", "make something concrete"),
-            new Word(6, "lubberly", "clumsy and unskilled"),
-            new Word(7, "jocular", "characterized by jokes and good humor"),
-            new Word(8, "tamp", "press down tightly"),
-            new Word(9, "subnormality", "the state of being less than normal"),
-            new Word(10, "obbligato", "a part of the score that must be performed without change or omission")
+    private static List<Definition> definitionList = new ArrayList<>(Arrays.asList(
+            new Definition(1, "grenadine", "thin syrup made from pomegranate juice; used in mixed drinks"),
+            new Definition(2, "hefty", "of considerable weight and size"),
+            new Definition(3, "gladiolus", "any of numerous plants of the genus Gladiolus native chiefly to tropical and South Africa having sword-shaped leaves and one-sided spikes of brightly colored funnel-shaped flowers; widely cultivated"),
+            new Definition(4, "pelter", "a thrower of missiles"),
+            new Definition(5, "concretize", "make something concrete"),
+            new Definition(6, "lubberly", "clumsy and unskilled"),
+            new Definition(7, "jocular", "characterized by jokes and good humor"),
+            new Definition(8, "tamp", "press down tightly"),
+            new Definition(9, "subnormality", "the state of being less than normal"),
+            new Definition(10, "obbligato", "a part of the score that must be performed without change or omission")
     ));
 
     private static List<Answer> answerList = new ArrayList<>();
@@ -77,9 +77,9 @@ public class RandomFunServiceController {
 
     @GetMapping("/word")
     @ResponseStatus(HttpStatus.OK)
-    public Word getRandomWord() {
-        int randomWord = random.nextInt(wordList.size());
-        return wordList.get(randomWord);
+    public Definition getRandomDefinition() {
+        int randomWord = random.nextInt(definitionList.size());
+        return definitionList.get(randomWord);
     }
 
     @PostMapping("/magic")
