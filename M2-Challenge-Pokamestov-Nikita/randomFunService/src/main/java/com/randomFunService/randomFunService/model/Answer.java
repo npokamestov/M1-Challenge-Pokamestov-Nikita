@@ -2,29 +2,20 @@ package com.randomFunService.randomFunService.model;
 
 import java.util.Objects;
 
-public class Magic {
+public class Answer {
 
     protected int id;
     protected String question;
     protected String answer;
 
-    public Magic() {
+    public Answer() {
     }
 
-    public Magic(String answer) {
+    public Answer(int id, String question, String answer) {
+        this.id = id;
+        this.question = question;
         this.answer = answer;
     }
-
-//    public Magic(int id, String answer) {
-//        this.id = id;
-//        this.answer = answer;
-//    }
-
-//    public Magic(int id, String question, String answer) {
-//        this.id = id;
-//        this.question = question;
-//        this.answer = answer;
-//    }
 
     public int getId() {
         return id;
@@ -54,8 +45,8 @@ public class Magic {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Magic magic = (Magic) o;
-        return getId() == magic.getId() && Objects.equals(getQuestion(), magic.getQuestion()) && Objects.equals(getAnswer(), magic.getAnswer());
+        Answer answer = (Answer) o;
+        return getId() == answer.getId() && Objects.equals(getQuestion(), answer.getQuestion()) && Objects.equals(getAnswer(), answer.getAnswer());
     }
 
     @Override
@@ -65,7 +56,7 @@ public class Magic {
 
     @Override
     public String toString() {
-        return "Magic{" +
+        return "Answer{" +
                 "id=" + id +
                 ", question='" + question + '\'' +
                 ", answer='" + answer + '\'' +

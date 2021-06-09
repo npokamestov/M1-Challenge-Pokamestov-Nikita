@@ -1,6 +1,6 @@
 package com.randomFunService.randomFunService.controller;
 
-import com.randomFunService.randomFunService.model.Magic;
+import com.randomFunService.randomFunService.model.Answer;
 import com.randomFunService.randomFunService.model.Quote;
 import com.randomFunService.randomFunService.model.Word;
 import org.springframework.http.HttpStatus;
@@ -40,10 +40,10 @@ public class RandomFunServiceController {
             new Word(10, "obbligato", "a part of the score that must be performed without change or omission")
     ));
 
-    private static List<Magic> magicList = new ArrayList<>();
-    private static int magicIdCounter = 1;
+    private static List<Answer> answerList = new ArrayList<>();
+    private static int answerIdCounter = 1;
 
-    private static List<String> magicAnswerList = new ArrayList<>(Arrays.asList(
+    private static List<String> answerStrings = new ArrayList<>(Arrays.asList(
             "It is Certain.",
             "It is decidedly so.",
             "Without a doubt.",
@@ -84,13 +84,14 @@ public class RandomFunServiceController {
 
     @PostMapping("/magic")
     @ResponseStatus(HttpStatus.CREATED)
-    public Magic setRandomMagic(@RequestBody Magic magic) {
+    public Answer setRandomMagic(@RequestBody Answer answer) {
+        int randomChoice = random.nextInt(answerStrings.size());
+        String randomAnswer = answerStrings.get(randomChoice);
 
-        int randomMagic = random.nextInt(magicAnswerList.size());
-        String randomAnswer = magicAnswerList.get(randomMagic);
-        magic.setId(magicIdCounter++);
-        magic.setAnswer(randomAnswer);
-        magicList.add(magic);
-        return magic;
+        answer.setId(answerIdCounter++);
+        answer.setAnswer(randomAnswer);
+        answerList.add(answer);
+
+        return answer;
     }
 }
