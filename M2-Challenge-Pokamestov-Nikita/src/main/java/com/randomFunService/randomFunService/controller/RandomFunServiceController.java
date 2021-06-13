@@ -71,22 +71,19 @@ public class RandomFunServiceController {
     @GetMapping("/quote")
     @ResponseStatus(HttpStatus.OK)
     public Quote getRandomQuote() {
-        int randomQuote = random.nextInt(quoteList.size());
-        return quoteList.get(randomQuote);
+        return quoteList.get(random.nextInt(quoteList.size()));
     }
 
     @GetMapping("/word")
     @ResponseStatus(HttpStatus.OK)
     public Definition getRandomDefinition() {
-        int randomWord = random.nextInt(definitionList.size());
-        return definitionList.get(randomWord);
+        return definitionList.get(random.nextInt(definitionList.size()));
     }
 
     @PostMapping("/magic")
     @ResponseStatus(HttpStatus.CREATED)
     public Answer setRandomMagic(@RequestBody Answer answer) {
-        int randomChoice = random.nextInt(answerStrings.size());
-        String randomAnswer = answerStrings.get(randomChoice);
+        String randomAnswer = answerStrings.get(random.nextInt(answerStrings.size()));
 
         answer.setId(answerIdCounter++);
         answer.setAnswer(randomAnswer);
