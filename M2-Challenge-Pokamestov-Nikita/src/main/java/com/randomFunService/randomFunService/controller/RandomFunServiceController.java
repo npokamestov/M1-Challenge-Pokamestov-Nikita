@@ -66,7 +66,7 @@ public class RandomFunServiceController {
             "Very doubtful."
     ));
 
-    Random random = new Random();
+    private Random random = new Random();
 
     @GetMapping("/quote")
     @ResponseStatus(HttpStatus.OK)
