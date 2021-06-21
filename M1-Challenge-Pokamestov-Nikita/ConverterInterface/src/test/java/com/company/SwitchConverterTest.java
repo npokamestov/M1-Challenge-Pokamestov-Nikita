@@ -5,13 +5,13 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class SwitchTest {
+public class SwitchConverterTest {
 
-    Switch sCon;
+    SwitchConverter sCon;
 
     @Before
     public void setUp() {
-        sCon = new Switch();
+        sCon = new SwitchConverter();
     }
 
     @Test

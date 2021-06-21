@@ -5,13 +5,13 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class IfTest {
+public class IfConverterTest {
 
-    If iCon;
+    IfConverter iCon;
 
     @Before
     public void setUp() {
-        iCon = new If();
+        iCon = new IfConverter();
     }
 
     @Test

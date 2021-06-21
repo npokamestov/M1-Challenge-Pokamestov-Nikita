@@ -40,13 +40,13 @@ public class ConverterApplication {
             userDayNumber = scan.nextInt();
         }
 
-        Switch sCon = new Switch();
-        If iCon = new If();
+        SwitchConverter sCon = new SwitchConverter();
+        IfConverter iCon = new IfConverter();
 
-        System.out.println("Using |ConverterSwitch|, the Month is: "+sCon.convertMonth(userMonthNumber));
-        System.out.println("Using |ConverterSwitch|, the Day is: "+sCon.convertDay(userDayNumber));
+        System.out.println("Using |SwitchConverter|, the Month is: "+sCon.convertMonth(userMonthNumber));
+        System.out.println("Using |SwitchConverter|, the Day is: "+sCon.convertDay(userDayNumber));
         System.out.println("================================================");
-        System.out.println("Using |ConverterIf|, the Month is: "+iCon.convertMonth(userMonthNumber));
-        System.out.println("Using |ConverterIf|, the Day is: "+iCon.convertDay(userDayNumber));
+        System.out.println("Using |IfConverter|, the Month is: "+iCon.convertMonth(userMonthNumber));
+        System.out.println("Using |IfConverter|, the Day is: "+iCon.convertDay(userDayNumber));
         }
     }

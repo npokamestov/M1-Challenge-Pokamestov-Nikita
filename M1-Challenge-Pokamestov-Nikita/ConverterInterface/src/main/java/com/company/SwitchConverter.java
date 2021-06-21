@@ -2,7 +2,7 @@ package com.company;
 
 import com.company.interfaces.ConverterSwitch;
 
-public class Switch implements ConverterSwitch {
+public class SwitchConverter implements ConverterSwitch {
 
     public String convertMonth(int monthNumber) {
 

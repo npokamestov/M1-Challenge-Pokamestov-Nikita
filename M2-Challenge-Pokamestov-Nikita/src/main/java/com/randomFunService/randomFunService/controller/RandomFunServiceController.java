@@ -82,13 +82,13 @@ public class RandomFunServiceController {
 
     @PostMapping("/magic")
     @ResponseStatus(HttpStatus.CREATED)
-    public Answer setRandomMagic(@RequestBody Answer answer) {
+    public Answer setRandomAnswer(@RequestBody Answer question) {
         String randomAnswer = answerStrings.get(random.nextInt(answerStrings.size()));
 
-        answer.setId(answerIdCounter++);
-        answer.setAnswer(randomAnswer);
-        answerList.add(answer);
+        question.setId(answerIdCounter++);
+        question.setAnswer(randomAnswer);
+        answerList.add(question);
 
-        return answer;
+        return question;
     }
 }

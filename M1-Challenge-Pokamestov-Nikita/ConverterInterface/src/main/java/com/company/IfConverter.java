@@ -2,7 +2,7 @@ package com.company;
 
 import com.company.interfaces.ConverterIf;
 
-public class If implements ConverterIf {
+public class IfConverter implements ConverterIf {
     public String convertMonth(int userMonthNumber) {
 
         if (userMonthNumber == 1) {
